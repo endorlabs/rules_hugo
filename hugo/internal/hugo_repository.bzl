@@ -14,7 +14,7 @@ def _hugo_repository_impl(repository_ctx):
 
     os_name = repository_ctx.os.name.lower()
     if os_name.startswith("mac os"):
-        os_arch = "macOS-64bit"
+        os_arch = "darwin-universal"
     elif os_name.find("windows") != -1:
         os_arch = "Windows-64bit"
     else:
